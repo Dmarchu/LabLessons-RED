@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Prueba</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.3rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 1rem;
+            color: #4CAF50;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 10px;
+            flex: 1;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Redes de Computadores</h1>
+    <nav>
+        <a href="#servicios">Historial</a>
+        <a href="#galeria">Información</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section class="section" id="servicios">
+        <h2>Historial de Pruebas</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Pruebas en práctica 4</h3>
+                <p>Desarrollo de la app U-Mail poniendo en práctica contenidos de la práctica 4.</p>
+            </div>
+            <div class="card">
+                <h3>Pruebas en práctica 5</h3>
+                <p>Esta misma página es una prueba con los contenidos de la práctica 5 con peticiones HTTP.</p>
+            </div>
+            <div class="card">
+                <h3>¿Otras pruebas?</h3>
+                <p>En el futuro seguiré experimentando con las oportunidades conseguidas con los conocimientos de esta asignatura.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="galeria">
+        <h2>Información Personal</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>¿Quién soy?</h3>
+                <p>Soy un alumno de la ETSINF con curiosidad por explorar las posibilidades de la programación.</p>
+            </div>
+            <div class="gallery">
+                <img src="https://cdn.prod.website-files.com/5f5a53e153805db840dae2db/65a57a949d3e2fd8f204512c_lenguajes-programacion-mas-demandados.webp" alt="Imagen 1">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta? No dudes en <a href="mailto:dmaralo@upv.edu.es" class="button">Contactarnos</a>.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Sitio Web Prueba de Redes de Computadores. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
